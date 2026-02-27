@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Universe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Marvel_Logo.svg" alt="MARVEL" width="120">
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#characters">Personagens</a></li>
+                <li><a href="#movies">Filmes</a></li>
+                <li><a href="#voting">Votação</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Universo Marvel</h1>
+            <p>Explore heróis, vilões e aventuras épicas</p>
+            <a href="#characters" class="btn">Conheça os Personagens</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>Sobre a Marvel</h2>
+        <p>A Marvel Entertainment é uma empresa americana de entretenimento que produz filmes, séries, quadrinhos e muito mais. Desde 1939, a Marvel vem criando personagens icônicos que conquistaram o mundo inteiro.</p>
+    </section>
+
+    <section id="characters" class="characters">
+        <h2>Personagens Icônicos</h2>
+        <div class="character-grid">
+            <div class="character-card">
+                <img src="img/homem-aranha.gif" alt="Homem-Aranha">
+                <div class="card-content">
+                    <h3>Homem-Aranha</h3>
+                </div>
+            </div>
+            <div class="character-card">
+                <img src="img/homem-de-ferro.gif" alt="Homem de Ferro">
+                <div class="card-content">
+                    <h3>Homem de Ferro</h3>
+                </div>
+            </div>
+            <div class="character-card">
+                <img src="img/capitao-america.gif" alt="Capitão América">
+                <div class="card-content">
+                    <h3>Capitão América</h3>
+                </div>
+            </div>
+            <div class="character-card">
+                <img src="img/thor.gif" alt="Thor">
+                <div class="card-content">
+                    <h3>Thor</h3>
+                </div>
+            </div>
+            <div class="character-card">
+                <img src="img/hulk.gif" alt="Hulk">
+                <div class="card-content">
+                    <h3>Hulk</h3>
+                </div>
+            </div>
+            <div class="character-card">
+                <img src="img/viuva-negra.gif" alt="Viúva Negra">
+                <div class="card-content">
+                    <h3>Viúva Negra</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="movies" class="movies">
+        <h2>Filmes em Destaque</h2>
+        <div class="movie-grid">
+            <div class="movie-card">
+                <img src="img/vingadores-ultimato.jpg" alt="Vingadores: Ultimato">
+                <div class="card-content">
+                    <h3>Vingadores: Ultimato</h3>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="img/homem aranha filme.jpeg" alt="Homem-Aranha: Sem Volta para Casa">
+                <div class="card-content">
+                    <h3>Homem-Aranha: Sem Volta para Casa</h3>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="img/pantera-negra.jpeg" alt="Pantera Negra">
+                <div class="card-content">
+                    <h3>Pantera Negra</h3>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="img/guardiões.jpg" alt="Guardiões da Galáxia">
+                <div class="card-content">
+                    <h3>Guardiões da Galáxia</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="voting" class="voting">
+        <h2>Votação: Qual seu Personagem Favorito?</h2>
+        <p class="voting-subtitle">Vote no seu herói Marvel favorito e see quem lidera o ranking!</p>
+        
+        <div class="voting-grid">
+            <div class="voting-card">
+                <img src="img/homem-aranha.gif" alt="Homem-Aranha">
+                <div class="voting-content">
+                    <h3>Homem-Aranha</h3>
+                    <div class="vote-stats">
+                        <div class="vote-bar">
+                            <div class="vote-percentage" id="percentage-homem-aranha"></div>
+                        </div>
+                        <div class="vote-count">
+                            <span id="vote-homem-aranha">0</span> votos
+                        </div>
+                    </div>
+                    <button class="vote-btn" data-character="homem-aranha">🕷️ Votar</button>
+                </div>
+            </div>
+            
+            <div class="voting-card">
+                <img src="img/homem-de-ferro.gif" alt="Homem de Ferro">
+                <div class="voting-content">
+                    <h3>Homem de Ferro</h3>
+                    <div class="vote-stats">
+                        <div class="vote-bar">
+                            <div class="vote-percentage" id="percentage-homem-de-ferro"></div>
+                        </div>
+                        <div class="vote-count">
+                            <span id="vote-homem-de-ferro">0</span> votos
+                        </div>
+                    </div>
+                    <button class="vote-btn" data-character="homem-de-ferro">🤖 Votar</button>
+                </div>
+            </div>
+            
+            <div class="voting-card">
+                <img src="img/capitao-america.gif" alt="Capitão América">
+                <div class="voting-content">
+                    <h3>Capitão América</h3>
+                    <div class="vote-stats">
+                        <div class="vote-bar">
+                            <div class="vote-percentage" id="percentage-capitao-america"></div>
+                        </div>
+                        <div class="vote-count">
+                            <span id="vote-capitao-america">0</span> votos
+                        </div>
+                    </div>
+                    <button class="vote-btn" data-character="capitao-america">🛡️ Votar</button>
+                </div>
+            </div>
+            
+            <div class="voting-card">
+                <img src="img/thor.gif" alt="Thor">
+                <div class="voting-content">
+                    <h3>Thor</h3>
+                    <div class="vote-stats">
+                        <div class="vote-bar">
+                            <div class="vote-percentage" id="percentage-thor"></div>
+                        </div>
+                        <div class="vote-count">
+                            <span id="vote-thor">0</span> votos
+                        </div>
+                    </div>
+                    <button class="vote-btn" data-character="thor">⚡ Votar</button>
+                </div>
+            </div>
+            
+            <div class="voting-card">
+                <img src="img/hulk.gif" alt="Hulk">
+                <div class="voting-content">
+                    <h3>Hulk</h3>
+                    <div class="vote-stats">
+                        <div class="vote-bar">
+                            <div class="vote-percentage" id="percentage-hulk"></div>
+                        </div>
+                        <div class="vote-count">
+                            <span id="vote-hulk">0</span> votos
+                        </div>
+                    </div>
+                    <button class="vote-btn" data-character="hulk">💚 Votar</button>
+                </div>
+            </div>
+            
+            <div class="voting-card">
+                <img src="img/viuva-negra.gif" alt="Viúva Negra">
+                <div class="voting-content">
+                    <h3>Viúva Negra</h3>
+                    <div class="vote-stats">
+                        <div class="vote-bar">
+                            <div class="vote-percentage" id="percentage-viuva-negra"></div>
+                        </div>
+                        <div class="vote-count">
+                            <span id="vote-viuva-negra">0</span> votos
+                        </div>
+                    </div>
+                    <button class="vote-btn" data-character="viuva-negra">🖤 Votar</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="total-votes">
+            Total de votos: <span id="total-votes">0</span> 🎬
+        </div>
+        
+        <button class="reset-btn" onclick="resetVotes()">🔄 Reiniciar Votação</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Marvel Universe. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <script src="voting.js"></script>
+</body>
+</html>
